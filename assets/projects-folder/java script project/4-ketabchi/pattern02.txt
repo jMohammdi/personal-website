@@ -1,0 +1,134 @@
+let books = [
+    {
+        id: 1,
+        title: "کمدی الهی",
+        author: "دانته",
+        published_date: 1472,
+        language: "ایتالیایی",
+        genre: "شعر"
+    },
+    {
+        id: 2,
+        title: "ضیافت",
+        author: "افلاطون",
+        published_date: 385,
+        language: "یونانی",
+        genre: "فلسفه"
+    },
+    {
+        id: 3,
+        title: "منطق الطیر",
+        author: "عطار",
+        published_date: 1177,
+        language: "فارسی",
+        genre: "شعر"
+    },
+    {
+        id: 4,
+        title: "مثنوی معنوی",
+        author: "مولوی",
+        published_date: 1258,
+        language: "فارسی",
+        genre: "شعر"
+    },
+    {
+        id: 5,
+        title: "دیوان حافظ",
+        author: "حافظ",
+        published_date: 1200,
+        language: "فارسی",
+        genre: "شعر"
+    },
+    {
+        id: 6,
+        title: "رومیو و جولیت",
+        author: "ویلیام شکسپیر",
+        published_date: 1595,
+        language: "انگلیسی",
+        genre: "عاشقانه"
+    },
+    {
+          id: 7,
+        title: "دیوان اشعار شهریار",
+        author: "شهریار",
+        published_date: 1955,
+        language: "فارسی",
+        genre: "عاشقانه"
+
+
+    },
+    {
+        id: 8,
+        title: "ویس و رامین",
+        author: "فخرالدین اسعد گرگانی",
+        published_date: 1054,
+        language: "فارسی",
+        genre: "عاشقانه"
+    },
+    {
+        id: 9,
+        title: "گلستان سعدی",
+        author: "سعدی",
+        published_date: 1258,
+        language: "فارسی",
+        genre: "شعر"
+    },
+  
+    {
+        id: 10,
+        title: "گلشن راز",
+        author: "شیخ محمود شبستری",
+        published_date: 1311,
+        language: "فارسی",
+        genre: "شعر"
+    },
+    {
+        id: 11,
+        title: "لیلی و مجنون",
+        author: "نظامی",
+        published_date: 1188,
+        language: "فارسی",
+        genre: "عاشقانه"
+    },
+    {
+        id: 12,
+        title: "شاهنامه",
+        author: "فردوسی",
+        published_date: 1010,
+        language: "فارسی",
+        genre: "شعر"
+    },
+    {
+        id: 13,
+        title: "ایلیاد",
+        author: "هومر",
+        published_date: 762,
+        language: "یونانی",
+        genre: "شعر"
+    },
+    {
+        id: 14,
+        title: "ادیسه",
+        author: "هومر",
+        published_date: 725,
+        language: "یونانی",
+        genre: "شعر"
+    },
+    
+    {
+        id: 15,
+        title: "هملت",
+        author: "ویلیام شکسپیر",
+        published_date: 1609,
+        language: "یونانی",
+        genre: "درام"
+    },
+    {
+        id: 16,
+        title: "دون کیشوت",
+        author: "میگل دسروانتس",
+        published_date: 1605,
+        language: "اسپانیایی",
+        genre: "درام"
+    }و
+]

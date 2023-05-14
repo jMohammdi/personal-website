@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(97, 231, 234);
+    background: #222;
+}
+
+.container-music {
+    width: 52%;
+    height: 60%;
+    margin: auto;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 19px 12px rgba(225, 109, 244, 1);
+}
+
+.music-player {
+    height: 85%;
+    min-width: 30%;
+    margin: auto;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 30px;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.muisc-top-icon {
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.muisc-top-icon p {
+    height: 30px;
+    line-height: 30px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 1rem;
+}
+
+.arrow-left,
+.music-bar {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background: #d0dee9;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, .4), 8px 8px 15px #fff, -8px -8px 15px #ffff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.music-album-photo {
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+    margin: 25px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #e2e8ee, 0 0 2px #fff, 13px 13px 20px #e7aaaf, -13px -13px 20px #ffff;
+}
+
+.music-album-photo img {
+    height: 180px;
+    width: 180px;
+}
+
+.music-detail {
+    margin-top: 40px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.music-detail h2 {
+    color: black;
+    font-size: 20px;
+}
+
+.music-detail p {
+    display: block;
+    margin: 5px;
+    color: black;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-family: 9px;
+    color: #666;
+    margin: 5px 0px;
+}
+
+.itemline-bar::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 35%;
+    z-index: 1;
+    background-color: #1e90ff;
+}
+
+.music-changer {
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+}
+
+.prev,
+#puse,
+.next {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #1e90ff;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    border: 4px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+
+#puse {
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.prev:hover,
+.next:hover {
+    background: #ff6b81;
+}
+
+.bg-pause {
+    background: #2ed573 !important;
+}
+
+.music-contain {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 70%;
+    margin: 5px auto;
+    height: 5px;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #1e90ff;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #eb4d4b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volum-c {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: black;
+    align-items: center;
+}
+
+.autod {
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.showvol {
+    color: #ff6b81;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#muteMUsic {
+    cursor: pointer !important;
+    z-index: 3;
+    padding: .5rem;
+    background: #d0dee9;
+    box-shadow: 0 0 0 4px rgb(255 255 255 / 40%), 8px 8px 15px #fff, -8px -8px 15px #ffff;
+    border-radius: 50%;
+}
+
+.rangeVol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.music-contain span {
+    color: #eb4d4b;
+    font-size: 19px;
+}
+
+.bg-vedio {
+    height: 100% !important;
+}

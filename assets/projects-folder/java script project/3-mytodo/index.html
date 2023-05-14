@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="todoapp.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+    <title>todo App</title>
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+    <div class="container h-75 ">
+        <div class="center d-flex justify-content-around flex-row-reverse pt-3 align-items-center">
+            <!-- name app  -->
+            <h3 class=" d-none d-md-flex"> todo App</h3>
+            <!-- week day -->
+            <select id="week">
+                <option value="شنبه">شنبه</option>
+                <option value="یک شنبه">یک شنبه</option>
+                <option value="دوشنبه">دوشنبه</option>
+                <option value="سه شنبه">سه شنبه</option>
+                <option value="چهارشنبه">چهارشنبه</option>
+                <option value="پنج شنبه">پنج شنبه</option>
+                <option value="جمعه">جمعه</option>                            
+            </select>
+            <!-- clock digital -->
+            <div id="digital " class="d-flex flex-row-reverse">
+                <div id="hour"></div>
+                <div id="minuts"></div>
+                <div id="seconds" class="pr-2"></div>
+                <div id="ampm"></div>
+            </div>
+
+        </div>
+        <!-- box add item  -->
+        <div class="form pt-2 d-flex justify-content-center align-items-center">
+            <span class="plus"><a href="#"><i class="fa fa-plus" id="additemtodo"></i></a></span>
+            <input type="text" id="input" placeholder="آیتم خود را  وارد کنید   " autofocus class=" w-75 p-3 text-right">
+        </div>
+        <!-- information how many add item in today -->
+        <div class="information ">
+            <nav class="navbar navbar-expand-lg navbar-light  pt-3">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center">
+                        <li class=" nav-item active " onclick="showall()">
+                            <a class="nav-link " href="# ">نمایش همه <span class="shownum look ">0</span>  <span class="sr-only ">(current)</span></a>
+                        </li>
+                        <li class="nav-item " onclick="com() ">
+                            <a class="nav-link " href="# ">نمایش انجام شده ها  <span class=" showcomplete look ">0</span></a>
+                        </li>
+                        <li class="nav-item " onclick="filtreun() ">
+                            <a class="nav-link " href="# ">نمایش انجام نشده ها  <span class=" look showuncomplete ">0</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="listener ">
+            <ul id="ul" class="text-center p-0 containerSco">
+
+
+            </ul>
+        </div>
+        <div class="clear ">
+            <a href="# " id="clear" class=" nonactive clear">حذف همه ای موارد  </a>
+        </div>
+    </div>
+
+
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container ">
+        <div class="center ">
+            <div class="width ">
+                <h1>TO-DO</h1>
+                <p class="item ">New Item</p>
+                <div class="form ">
+                    <input type="text " id="input " placeholder="start typing ... " autofocus>
+                    <span class="plus "><a href="# "><i class="fa fa-plus " id="additemtodo "></i></a></span>
+                </div>
+                <div class="show ">
+                    <span><a href="# "  onclick="showall() ">SHOWAll<span class="shownum look ">0</span> </a>
+                    </span>
+                    <span onclick="com() "><a href="# " > ALLCOMPLETED <span class=" showcomplete look ">0</span></a>
+                    </span>
+                    <span><a href="# " onclick="filtreun() ">  0UNCOMPLETED  <span class=" look showuncomplete ">0</span></a>
+                    </span>
+                </div>
+                <div class="listener ">
+                    <ul id="ul ">
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="clear ">
+                <a href="# " id="clear " class="nonactive ">CLEAR ALL</a>
+            </div>
+        </div>
+
+    </div>
+</body> -->

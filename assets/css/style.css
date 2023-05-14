@@ -1,0 +1,1315 @@
+/* ===========main style ========= */
+
+@font-face {
+    font-family: mainFont;
+    src: url(../fonts/font/IRANSansWeb.woff);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+ul,
+i {
+    list-style-type: none;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.box-s {
+    box-shadow: 0px 2px 10px 1px rgb(0 0 0 / 50%);
+}
+
+.box-ins {
+    box-shadow: 0px 2px 10px 1px rgb(0 0 0 / 50%), inset 0px 2px 10px 1px rgb(0 0 0 / 50%) !important
+}
+
+.box-active {
+    box-shadow: inset 1px 1px 13px 0px rgb(26 179 148);
+}
+
+.cusor {
+    cursor: pointer;
+}
+
+:root {
+    /* =========DEFAULT COLOR WEB SITE falt ======mode====*/
+    --bg-bd: #f8f8f8;
+    --text-color: #3d3d3d;
+    --text-esp: #1ab394;
+    /* =============DARK MODE COLOR WEB SITE */
+    --bg-d--bd: #2c2d30;
+    --text-d-color: #ffff;
+    /* ======Theme Skin Neo====== */
+    --bg-neo-bd: #f1f3f6;
+    /* ========box shadow dark mode neo */
+    --box-s-neo: 3px 3px 3px #202125, -3px -3px 3px #3e3e3e;
+    /* ============box shadow none dark flat ========= */
+    --box-n-f-d: none;
+    /* z-index items */
+    --z-top-h: 1000;
+    --z-top-z: 100;
+}
+
+.size1 {
+    font-size: 1.5rem;
+}
+
+.size2 {
+    font-size: 1.2rem;
+}
+
+.size3 {
+    font-size: 1.75rem;
+}
+
+.size4 {
+    font-size: 2rem;
+}
+
+body {
+    background: var(--bg-neo-bd);
+    color: var(--text-color);
+    transition: 0.6s ease !important;
+    overflow-x: hidden;
+    font-family: mainFont !important;
+}
+
+
+/* =================header========================= */
+
+header {
+    font-family: inherit;
+    background-color: inherit;
+    z-index: 100;
+    height: 100px;
+    top: 0;
+    transition: top 0.5s ease !important;
+}
+
+.container-h {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.log-web {
+    width: 8%;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.navBars {
+    min-width: 60%;
+}
+
+.navBars li {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.navBars li a {
+    cursor: pointer;
+    color: inherit;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.designer-lg {
+    min-width: 50%;
+    margin: 0 auto;
+}
+
+.item:hover a {
+    color: #ff4757;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+.home {
+    width: 100%;
+    height: 115vh;
+    position: relative;
+}
+
+.container-images img {
+    position: absolute;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.home img:nth-child(1) {
+    top: 20%;
+    left: 20%;
+}
+
+.home img:nth-child(2) {
+    left: 30%;
+    top: 80%;
+}
+
+.home img:nth-child(3) {
+    right: 45%;
+    top: 38%;
+}
+
+.home img:nth-child(4) {
+    right: 5%;
+    top: 40%;
+}
+
+.home img:nth-child(5) {
+    right: 20%;
+    top: 20%;
+}
+
+.home img:nth-child(6) {
+    left: 50%;
+    top: 60%;
+}
+
+.home img:nth-child(7) {
+    left: 80%;
+    top: 70%;
+}
+
+.home img:nth-child(8) {
+    left: 80%;
+    top: 60%;
+}
+
+.home img:nth-child(9) {
+    left: 10%;
+    top: 70%;
+}
+
+.home img:nth-child(10) {
+    right: 30%;
+    top: 40%;
+}
+
+.home img:nth-child(11) {
+    left: 45%;
+    top: 50%;
+}
+
+.home img:nth-child(12) {
+    left: 10%;
+    top: 30%;
+}
+
+.images-wizard img {
+    min-width: 50%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 9px 0px rgb(0 0 0 / 50%);
+    height: 400px;
+    transform: scaleX(-1);
+}
+
+.arrow {
+    position: fixed;
+    top: 110%;
+    right: 5%;
+    background: var(--text-esp);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: top 0.7s ease;
+}
+
+.btn-arrow {
+    padding: .5rem;
+    font-size: 1.3rem;
+    color: var(--bg-bd);
+}
+
+.darkMode {
+    width: 70px;
+    top: 20%;
+    left: -1%;
+    z-index: 10;
+}
+
+.bx-sun.suns {
+    color: #fff200;
+}
+
+.bx-sun,
+.bx-moon {
+    font-size: 1.8rem;
+}
+
+.info-virth i {
+    font-size: 1.5rem;
+}
+
+.main-vith {
+    min-width: 80%;
+    margin: auto;
+}
+
+.main-vith h1 {
+    font-size: 2.5rem;
+}
+
+.items-v a {
+    color: inherit;
+    font-size: 1.2rem;
+    transition: 0.5s ease;
+}
+
+.items-v:hover a {
+    color: #ff4757 !important;
+}
+
+
+/* ====================آیکون های فضای مجازی ====================*/
+
+.content-show {
+    z-index: 100;
+    position: fixed;
+    bottom: 8%;
+    left: 2%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: revert;
+}
+
+.liser {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.ico01 {
+    background-color: var(--bg-neo-bd);
+    position: relative;
+    z-index: 4;
+    box-shadow: 0px 1px 16px 4px rgb(188 23 23 / 34%)
+}
+
+.ico01:active {
+    box-shadow: none;
+}
+
+.ico02 {
+    background-color: #222;
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 3;
+}
+
+.ico03 {
+    background-color: #DB4437;
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
+    z-index: 2;
+}
+
+.ico04 {
+    background-color: #00acee;
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+    z-index: 1;
+}
+
+.ico05 {
+    background-color: #3b5998;
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+    z-index: 1;
+}
+
+.move-ico {
+    position: absolute;
+    top: 0;
+}
+
+.active-s .ico02 {
+    transform: translateX(calc(54px + 30px));
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+}
+
+.active-s .ico03 {
+    transform: translateX(calc(54px * 2 + 30px * 2));
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
+}
+
+.active-s .ico04 {
+    transform: translateX(calc(54px * 3 + 30px * 3));
+    transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu-object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: calc(54px * 4 + 30px * 3);
+    height: 54px;
+}
+
+.menu-object .ico01::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 24px;
+    margin: auto;
+    background-color: #111;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu-object .ico01::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 4px;
+    margin: auto;
+    background-color: #111;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu-object .link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 1;
+    font-size: 24px;
+}
+
+.menu-object .link i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.active-s .menu-object .ico01::before {
+    transform: rotate(45deg);
+}
+
+.active-s .menu-object .ico01::after {
+    transform: rotate(45deg);
+}
+
+.content-show.animate {
+    animation: rotate 1s infinite alternate;
+}
+
+@keyframes rotate {
+    10% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* ============================در مورد من================== */
+
+#about {
+    width: 100%;
+    min-height: 100vh !important;
+}
+
+.about-content {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.img-a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.item-a {
+    color: var(--text-esp);
+    transition: 0.5s ease;
+}
+
+.item-a:hover {
+    color: #ff4757;
+}
+
+.text-about-t {
+    line-height: 2rem;
+    font-size: 1;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.img-a {
+    height: 300px !important;
+}
+
+.resume button {
+    position: relative;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background: #a5ffd5;
+    color: #ff4757;
+    border: 3px solid #84dcc6;
+    box-shadow: 1px 4px 10px 4px rgb(255 255 255 / 60%);
+    /* backdrop-filter: blur(5px); */
+}
+
+.resume button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.resume button::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background: #ff4757;
+    top: 100%;
+    left: 5%;
+    transition: 0.5s ease;
+}
+
+.resume button::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background: #ff4757;
+    top: -5%;
+    right: 5%;
+    transition: 0.5s ease;
+}
+
+.resume button:focus {
+    outline: none;
+}
+
+.resume button:hover::before {
+    left: 94%;
+}
+
+.resume button:hover::after {
+    right: 94%;
+}
+
+
+/* ===============مهارت های برنامه نویسی-------------- */
+
+.range-show {
+    width: 70%;
+    height: 12px;
+    margin: 0 auto;
+    background: #e1e1e1;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #2187e7b3;
+}
+
+.range-show::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0%;
+    background-color: #ff4757;
+    border-radius: 50px;
+    top: .7%;
+}
+
+.sklis-bar span {
+    color: #ff4757;
+    border-bottom: 1px solid #ff4757;
+}
+
+.icon-skils {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.sklis-bar p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.html-s.animate::before {
+    animation: html 3s forwards !important;
+}
+
+.bootstrap-s.animate::before {
+    animation: bootstrap 3s forwards !important;
+}
+
+.sass-s.animate::before {
+    animation: sass 3s forwards !important;
+}
+
+.jquery-s.animate::before {
+    animation: jquery 3s forwards !important;
+}
+
+.icdl-s.animate::before {
+    animation: icdl 3s forwards !important;
+}
+
+.javascript-s.animate::before {
+    animation: javscript 3s forwards !important;
+}
+
+.javascript-s-S.animate::before {
+    animation: javscript-s 3s forwards !important;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes sass {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes jquery {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes javscript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes javscript-s {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes icdl {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+
+/* ===================مهارت های شخصی =============================*/
+
+.conatainer-skils {
+    width: 100%;
+    min-height: 400px;
+}
+
+.conatainer-skils-c {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.first-skil {
+    text-align: center;
+    min-width: 20%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    border-radius: 5px;
+    transition: all 0.7s ease;
+    cursor: not-allowed
+}
+
+.first-skil:hover {
+    transform: scale(0.95);
+}
+
+
+/* =========================   پروژهای من برای وب سایت ============================ */
+
+#projects {
+    min-height: 100vh;
+}
+
+.container-projects {
+    width: 100%;
+}
+
+.btns-projects {
+    min-height: 100px;
+}
+
+.btn-effect-s {
+    background: transparent;
+    position: relative;
+    transition: all .6s;
+    padding: 14px 40px;
+    color: inherit;
+    font-weight: 600;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.6);
+    border: 3px solid #ff4757;
+}
+
+.btn-effect-s:focus {
+    outline: 0;
+}
+
+.btn-effect-s::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffe53b;
+    background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+    clip-path: circle(0% at 50% 100%);
+    transition: all .8s;
+    z-index: -2;
+}
+
+.btn-effect-s:hover {
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+.btn-effect-s:hover::before {
+    clip-path: circle(100% at 50% 100%);
+}
+
+.active-dashed-btn {
+    border: 3px dashed #ff4757;
+    background: linear-gradient(45deg, #00ff00, #a9ffa9);
+    color: #222;
+}
+
+
+/* =============================filter picture skils================ */
+
+.project-items {
+    width: 90%;
+    margin: auto;
+    min-height: 400px;
+}
+
+.project-item {
+    min-width: 30%;
+    margin: 2rem auto;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.intro-projects {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    /* background-color: rgba(255, 0, 21, 0.993); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+}
+
+.project-item:hover .intro-projects {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.6);
+    background-color: rgb(255, 71, 87, 0.8);
+}
+
+.link-projects {
+    margin: 1rem;
+    padding: .5rem;
+    background: #32ff7e;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+
+/* ========================مقاله ها===================== */
+
+.articles {
+    min-height: 170vh;
+    /* background: var(--bg-d--bd); */
+}
+
+.article {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    line-height: 30px;
+    margin: 1rem auto;
+    transition: all 0.6s ease-in-out;
+    background: rgba( 255, 255, 255, 0.10);
+    box-shadow: 1px 1px 20px 0px rgb(31 38 135 / 37%);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    color: inherit;
+}
+
+.img-article {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.img-article img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.article:hover {
+    transform: translateY(-20px) !important;
+}
+
+
+/* ===============تماس با من================ */
+
+footer {
+    min-height: 550px;
+}
+
+#contactme {
+    height: 100%;
+    /* background: var(--bg-d--bd); */
+    color: inherit;
+}
+
+.container-form {
+    min-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-person {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-person input {
+    min-width: 45%;
+    padding: 1rem;
+    color: inherit;
+    background: inherit;
+    border-radius: 5px;
+    text-align: right;
+    border: 2px solid var(--text-esp);
+}
+
+.email-info input {
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    color: inherit;
+    background: inherit;
+    border-radius: 5px;
+    text-align: right;
+    border: 2px solid var(--text-esp);
+}
+
+::placeholder {
+    color: inherit;
+}
+
+.text-messages textarea {
+    width: 100%;
+    color: inherit;
+    background: inherit;
+    border-radius: 5px;
+    text-align: right;
+    border: 2px solid var(--text-esp);
+    height: 200px;
+    resize: none;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.text-messages textarea::-webkit-scrollbar {
+    background-color: var(--text-esp);
+    width: 10px;
+}
+
+.text-messages textarea::-webkit-scrollbar-thumb {
+    background-color: #ff4757;
+    border-radius: 50px;
+}
+
+#contactme input,
+textarea:focus {
+    outline: none;
+}
+
+.btn-formm {
+    margin: 1rem;
+    text-align: center;
+}
+
+.btn-send {
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 6px;
+    background: #32ff7e;
+    font-size: 1.2rem;
+    color: inherit;
+    box-shadow: 0px 5px 4px 1px rgba( 0, 0, 0, .5);
+    transition: 0.2s ease;
+}
+
+.btn-send:focus {
+    outline: none;
+}
+
+.btn-send:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+
+/* ==========mobile class========= */
+
+.container-smm {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.logo-s-sm {
+    width: 60%;
+}
+
+.logo-s-sm img {
+    width: 40%;
+}
+
+.menu-sm {
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.menu-sm-m {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    top: -300%;
+    transition: top 0.9s ease;
+    background-color: inherit;
+}
+
+.menu-sm-m li {
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.menu-sm-m li a {
+    color: inherit;
+}
+
+.resome {
+    width: 400px;
+    height: 600px;
+    top: 100%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+
+/* ============class add js===================== */
+
+.actice-link {
+    position: absolute;
+    border-bottom: 2px solid var(--text-esp);
+    transition: 0.5s ease;
+    left: 200%;
+    z-index: -1;
+    top: 40%;
+    transition: 0.6s ease;
+}
+
+.menu-sm-m {
+    position: absolute;
+}
+
+.change-menu .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px) translateY(-4px) translateX(4px);
+    /* transform: translateY(-10px); */
+}
+
+.change-menu .bar2 {
+    opacity: 0;
+}
+
+.change-menu .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.show-sm-m {
+    z-index: -1;
+    top: 80%;
+    box-shadow: -2px 1px 14px 0px #222;
+}
+
+.show-arrow {
+    top: 90% !important;
+    z-index: 1000;
+}
+
+.darkMode-b {
+    color: var(--bg-bd);
+    background: var(--bg-d--bd);
+}
+
+.darkMode-b .menu-r-s div {
+    background-color: var(--bg-bd);
+}
+
+.active {
+    color: var(--text-esp) !important;
+}
+
+.beesa {
+    display: none !important;
+}
+
+@media screen and (max-width:768px) {
+    .sklis-bar {
+        width: 100% !important;
+    }
+    .first-skil {
+        max-width: 70%;
+        margin: .5rem auto;
+    }
+    .project-item {
+        width: 80%;
+        margin: 1rem auto !important;
+    }
+    .info-person {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-person input {
+        width: 100%;
+        margin: .5rem auto;
+    }
+    .progress-ring {
+        margin: 1rem auto;
+    }
+}
+
+.project-item a {
+    color: #fff;
+}
+
+.loead-body {
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+
+.article-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a9ffa9;
+    box-shadow: 0px 0.5px 10px 0px rgb(0 0 0 / 60%);
+    transition: 0.2s ease;
+    color: #222;
+}
+
+.article-btn:focus {
+    outline: none;
+}
+
+.article-btn:active {
+    transform: translateY(4px);
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* skils loading color */
+
+.html-c {
+    color: #ff4757;
+}
+
+.jquery-c {
+    color: #34ace0;
+}
+
+.javascript-c {
+    color: #fff200;
+}
+
+.c-c {
+    color: #7d5fff;
+}
+
+.react-c {
+    color: #18dcff;
+}
+
+.computer-c {
+    color: #2C3A47;
+}
+
+.sass-c {
+    color: #FC427B;
+}
+
+.botstrap-c {
+    color: #cd84f1;
+}
+
+.type-c {
+    color: #33d9b2;
+}
+
+
+/* progress bar */
+
+.progress-ring {
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    position: relative;
+}
+
+.progress-ring:after {
+    content: "";
+    border-radius: 50%;
+    border: 15px solid inherit;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.progress-ring>span {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.progress-ring .progress-left {
+    left: 0;
+}
+
+.progress-ring .progress-bar-ring {
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    top: 0;
+}
+
+.progress-ring .progress-left .progress-bar-ring {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress-ring .progress-right {
+    right: 0;
+}
+
+.progress-ring .progress-right .progress-bar-ring {
+    left: -100%;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress-ring .progress-value {
+    font-size: 24px;
+    color: #ff4757;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-11 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(95deg);
+        transform: rotate(95deg);
+    }
+}
+
+@keyframes loading-22 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(150deg);
+        transform: rotate(150deg);
+    }
+}
+
+@keyframes loading-33 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(120deg);
+        transform: rotate(120deg);
+    }
+}
+
+@keyframes loading-44 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.progress-ring.blue .progress-bar-ring {
+    border-color: #32ff7e;
+}
+
+.active-ring-bar.progress-ring.first-ring .progress-left .progress-bar-ring {
+    animation: loading-11 1.8s linear forwards;
+}
+
+.active-ring-bar.progress-ring.second-ring .progress-left .progress-bar-ring {
+    animation: loading-22 1.8s linear forwards;
+}
+
+.active-ring-bar.progress-ring.third-ring .progress-left .progress-bar-ring {
+    animation: loading-33 1.8s linear forwards;
+}
+
+.active-ring-bar.progress-ring.fourth-ring .progress-left .progress-bar-ring {
+    animation: loading-44 1.8s linear forwards;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتابچی</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+    <link rel="stylesheet" href="../bootstrap/bootstrap-4.5.0-dist//css/bootstrap.min.css">
+    <script src="../jquery-popper/js.js" defer></script>
+    <script src="../jquery-popper/popper.js" defer></script>
+    <script src="../bootstrap/bootstrap-4.5.0-dist/js/bootstrap.min.js" defer></script>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../fonts/IRANSans/fonts/woff/IRANSansWeb_Medium.woff">
+    <script src="file.js/global.js" defer></script>
+    <script src="file.js/template.js" defer></script>
+    <!-- <script src="filterCheck.js" defer></script> -->
+    <script src="file.js/moment.js" defer></script>
+    <script src="file.js/app.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+</head>
+
+<body>
+    <div class="maincontainer head">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <div class="imgLogo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <a class="navbar-brand" href="#">
+                <h3 id="mainPage">کتابچی</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ho-bef navbaer-m p-0">
+                    <li class="nav-item active dif-h ">
+                        <a class="nav-link" href="#"> <span class="text-white">ثبت نام / ورود</span><i class=" fa fa-user-alt-slash m-1"></i></a>
+                    </li>
+                    <li class="nav-item dif-h">
+                        <a class="nav-link" href="#"> <span class="text-white"> تماس باما </span><i class=" fa fa-phone m-1"></i></a>
+                    </li>
+                    <li class="nav-item dif-h">
+                        <a class="nav-link" href="#"> <span class="text-white">  درباره ما </span><i class=" fa fa-person-booth m-1"></i></a>
+                    </li>
+                    <li class="nav-item dif-h" id="libery">
+                        <a href="#" class="nav-link"> <span class="text-white" id="plibrary"> کتابخانه شخصی </span><i class=" fa fa-book-open m-1"><span id="show" class="p-2"></span></i></a>
+                    </li>
+
+                </ul>
+
+                <div class="form-inline my-2 my-lg-0" id="form">
+                    <button class="btn btn-outline-success my-2 my-sm-0 serch" id="btnserach"><i class=" fa fa-search" ></i></button>
+                    <input class="form-control mr-sm-2 box-s" autofocus type="search" placeholder="جستجو بین100هزار کتاب  " id="boxsaerch">
+
+                </div>
+                <div class="chooseItem p-3 text-white text-right">
+
+
+
+                    <select id="select">
+                    <option value="">جستجوی سریع کتاب</option>
+                            <option value="titlBook" id="boxkindBook">جستجوی نام کتاب</option>
+                            <option value="namePerson" id="namePerson">جستجوی نام نویسنده</option>
+                            <option value="genreBook" id="boxgenre">جستجوی ژانر کتاب</option>
+                            <option value="languageBook" id="boxlan">انتخاب زبان کتاب</option>
+
+                                  </select>
+
+
+                </div>
+                <div class="btnBack text-center">
+                    <a href="#" class=" text-white">برگشت به صفحه اصلی</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="imgFirst">
+        <div class="img-f">
+            <img src="../img/img-first.png" alt="">
+
+            <h5 class="text-center textAboutBook text">
+
+
+                <br>
+            </h5>
+
+        </div>
+    </div>
+    <div class=" imgsecond">
+        <div class="img-f">
+            <img src="../img/img-second-2-2.png" alt="">
+
+            <h5 class="text-center textAboutBook">آخر هفته با کتابراه: همراه با کتاب‌های رایگان و <br> تخفیف‌های ویژه
+
+            </h5>
+
+        </div>
+    </div>
+    <!-- <div class="row w-100"> -->
+    <!-- <div class="col-3 text-right p-3 pr-3 mainItem">
+            <h3 class=" text-info pr-3">فیلتر ها</h3>
+            <div class="rightFilter pr-3"></div>
+        </div> -->
+
+    <div class="center ">
+
+
+
+    </div>
+    <!-- </div> -->
+
+
+    <div id="snackbar"> </div>
+
+
+</body>
+
+
+</html>
+
+</html>

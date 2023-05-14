@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>wizardfront</title>
+    <link rel="shortcut icon" href="assets/images/logo/wizard.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/loading/style.css">
+    <script src="assets/script/app.js" defer></script>
+
+</head>
+
+<body class="wizard">
+
+
+
+    <!--===================== loading web site==================== -->
+    <div class="container-loader">
+        <div class="loader ">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+    <!-- ===============آیکون های فضای مجازی======================== -->
+
+    <div class="wrapper ">
+        <div class="menu-object">
+            <ul class="toggle content-show animate">
+                <li class="ico01 normalico liser"></li>
+                <li class="move-ico ico02 liser">
+                    <a href="" class="link link01">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </li>
+                <li class="move-ico ico03 liser">
+                    <a href="https://www.instagram.com/wizard_front/" class="link link02">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </li>
+                <li class="move-ico ico04 liser">
+                    <a href="" class="link link03">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!--حالت دارک مده -->
+    <div class="darkMode p-2 text-center position-fixed rounded cusor box-s">
+        <span class="sun ">
+            <i class="bx bx-sun suns"></i>
+        </span>
+    </div>
+
+    <!-- دکمه برای بالا رفتن صفحه  -->
+    <div class="arrow">
+        <a href="#home"><i class="bx bx-arrow-from-bottom btn-arrow"></i></a>
+    </div>
+    <!-- =================HEADER WEB SITE ==================== -->
+    <header class="position-fixed  w-100 ">
+        <!-- ===========nav bar for md > lg ,xl -->
+        <div class="container-h d-none d-md-flex justify-content-md-between align-items-md-center  position-relative  ">
+            <div class="navBars">
+                <ul class="nav__menu  item-contant d-flex justify-content-around align-items-center d-none d-md-flex">
+                    <li class="item p-2 "><a href="#home" class="item-link active" title="contact me">صفحه اصلی</a></li>
+                    <li class="item p-2"><a href="#about" class="item-link" title="my  blog">درباره من</a></li>
+                    <li class="item p-2"><a href="#projects" class="item-link" title="show all projects ">پروژه ها</a>
+                    </li>
+                    <!-- <li class="item p-2"><a href="#" class="item-link" title="inforamtion about manager">وب سایت آموزشی -->
+                    </a>
+                    </li>
+                    <li class="item p-2"><a href="#Article" class="item-link " title="home web site"> مقاله ها </a></li>
+                    <li class="item p-2"><a href="#contactme" class="item-link " title="home web site">ارتباط با من</a></li>
+
+                </ul>
+
+
+            </div>
+            <div class="log-web">
+                <div class="logo">
+                    <img src="assets/images/logo/wizard-removebg-preview.png" alt="eb site logo" title="web site logo" />
+                </div>
+            </div>
+        </div>
+        <p class="actice-link absoult d-none d-md-block"> </p>
+        <!-- ===============منو همبرگری برای موبایل====================== -->
+        <div class="container-smm  d-flex justify-content-between align-items-center  d-md-none">
+            <div class="menubar w-50 ">
+
+                <div class="menu-sm d-flex justify-content-center flex-column align-items-start">
+                    <div class="p-2 menu-r-s">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="logo-sm w-50">
+                <div class="logo-s-sm m-0 mr-auto">
+                    <img src="assets/images/logo/wizard-removebg-preview.png" alt="eb site logo" title="web site logo" />
+                </div>
+            </div>
+        </div>
+        <!-- ==============منو برای موبایل -->
+        <div class="menu-sm-m d-md-none ">
+
+            <ul class="text-right contain-item ">
+                <li class="item "><a href="#home" class="item-link active" title="home web site">صفحه اصلی</a></li>
+                <li class="item"><a href="#about" class="item-link" title="inforamtion about manager">درباره من </a>
+                </li>
+                <li class="item"><a href="#projects" class="item-link" title="show all projects ">پروژه ها</a></li>
+                <li class="item "><a href="#Article" class="item-link " title="home web site"> مقاله ها </a></li>
+                <!-- <li class="item"><a href="#" class="item-link" title="my  blog">وب سایت آموزشی</a></li> -->
+                <li class="item "><a href="#contactme" class="item-link" title="contact me"> ارتباط با من</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- =============صفحه اصلی و معرفی -->
+        <section class="home  mb-3 pb-3" id="home">
+            <div class="container-images  d-none d-md-block">
+                <img src="assets/images/icons/angular.png" data-speed="7" alt="angular.png">
+                <img src="assets/images/icons/js.png" data-speed="5" alt="js.png">
+                <img src="assets/images/icons/sass.png" data-speed="10" alt="sass" class="d-none d-md-block">
+                <img src="assets/images/icons/css.png" data-speed="5" alt="css.png">
+                <img src="assets/images/icons/rect.png" data-speed="6" alt="rect.png">
+                <img src="assets/images/icons/node.png" data-speed="3" alt="node.png">
+                <img src="assets/images/icons/php.png" data-speed="5" alt="php.png" class="d-none d-md-block">
+                <img src="assets/images/icons/veu.png" data-speed="-8" alt="veu.png">
+                <img src="assets/images/icons/html.png" data-speed="7" alt="html.png">
+                <img src="assets/images/icons/sql.png" data-speed="8" alt="sql.png" class="d-none d-lg-block">
+                <img src="assets/images/icons/python.png" data-speed="10" alt="sql.png" class="d-none d-lg-block">
+                <img src="assets/images/icons/parent.png" data-speed="10" alt="sql.png" class="d-none d-lg-block">
+
+            </div>
+            <div class="w-100 h-100 row justify-content-sm-center align-items-center  align-content-center container-h flex-row-reverse">
+                <div class="images-wizard col-sm-12 col-md-6 col-lg-6 text-center align-content-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <img src=" assets/images/webdesigner/1.png" alt=" " class="designer designer-lg d-none d-md-block ">
+                    <img src=" assets/images/webdesigner/2.png" alt=" " class="designer d-md-none">
+                </div>
+                <div class="info-text col-sm-12 col-md-6 col-lg-6 text-center">
+                    <div class="main-vith d-flex flex-column justify-content-center align-items-sm-center ">
+                        <h1 class="item-a mt-1"> جواد محمدی</h1>
+                        <h2 class="size3 mt-1"> طراح و توسعه دهنده وب سایت</h2>
+                        <h2 class="size3 mt-1">مدرس کامپیوتر</h2>
+                        <div class="info-virth d-flex  flex-column align-items-center align-items-md-start justify-content-md-end  mt-2">
+
+                            <div class="items-v cusor p-2 d-flex align-items-center">
+                                <i class="bx bx-envelope pl-1" title="ایمیل"> </i><a href="mailto:javadmohamadi13j@gmail.com" target="_blank">
+                                    javadmohamadi13j@gmail.com</a>
+                            </div>
+                            <div class="items-v  cusor p-2 d-flex align-items-center">
+                                <i class="bx bx-phone  pl-1" title=" شماره تماس"></i> <a href="tel:+989197069504">
+                                    09197069504</a>
+                            </div>
+                            <div class="items-v  cusor p-2 d-flex align-items-center">
+                                <i class="bx bx-location-plus pl-1"></i> <a href="#">ایران -تهران</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============معرفی و در  مورد من -->
+        <section id="about" class="about d-flex align-items-start flex-column">
+            <div class="about-content row">
+                <div class="img-a col-12  col-sm-8 col-md-5 col-6 text-right" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="assets/images/about/about.png" alt="" class="designer box-s">
+                </div>
+                <div class="about-text col-md-6 text-center align-self-start" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+
+                    <h1 class=" item-a">درباره من</h1>
+                    <p class="text-about-t">جواد محمدی هستم متولد 1376 ساکن تهران در حوضه برنامه نویسی وب سایت و مهندسی نرم افزار فعالیت می کنم و از سال 1397 فعالیت خودم رو شروع کردم و در حال یادگیری هستم و در موسسه های آموزشی بصورت حضوری و آنلاین مشغول تدریس برنامه نویسی و
+                        کامپیوتر هستم
+                    </p>
+                    <a href="assets/images/rezome/resume.pdf" target="_blank">
+                        <div class="resume pt-3 ">
+                            <button class="resume-btn"> مشاهده روزمه     </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- ==============مهارت های برنامه نویسی================== -->
+            <div class="skils mt-3 w-100  about-content">
+                <h3 class="text-center item-a" data-aos="flip-left">مهارت ها</h3>
+                <div class=" d-flex w-100 flex-column flex-md-row justify-content-start align-items-end justify-content-md-between align-items-center ">
+                    <div class="sklis-bar w-50" data-aos="zoom-in">
+                        <div class="HTML mt-4 text-center ">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse flex-row-reverse"><i class="bx bxl-html5 pr-2 icon-skils html-c"></i> HTML5 , CSS3 <span>85%</span> </p>
+                            <div class="range-show html-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="CSS mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-bootstrap pr-2 icon-skils botstrap-c "></i>BOOTSTRAP <span>70%</span></p>
+                            <div class="range-show bootstrap-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="SASS mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-sass pr-2 icon-skils sass-c"></i>SASS , LESS <span>80%</span></p>
+                            <div class="range-show sass-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="SASS mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-react pr-2 icon-skils react-c"></i>REACT JS <span>80%</span></p>
+                            <div class="range-show sass-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="SASS mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-patreon pr-2 icon-skils type-c"></i>TYPE SCRIPT <span>70%</span></p>
+                            <div class="range-show sass-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sklis-bar w-50" data-aos="zoom-in">
+                        <div class="JQUEY mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-jquery pr-2 icon-skils jquery-c"></i>JQUEY <span>50%</span></p>
+                            <div class="range-show jquery-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="ICDL mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bx-laptop pr-2 icon-skils " style="color: inherit;"></i>ICDL <span>90%</span></p>
+                            <div class="range-show icdl-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="JAVASCRIPT mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-javascript pr-2 icon-skils javascript-c"></i>JAVASCRIPT <span>60%</span></p>
+                            <div class="range-show javascript-s position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="JAVASCRIPT mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-git pr-2 icon-skils html-c"></i>GIT AND GITHUB <span>90%</span></p>
+                            <div class="range-show javascript-s-S position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="JAVASCRIPT mt-4 text-center">
+                            <p class="mb-3 d-flex align-items-center justify-content-between flex-row-reverse"><i class="bx bxl-creative-commons pr-2 icon-skils c-c"></i>C ++ <span>90%</span></p>
+                            <div class="range-show javascript-s-S position-relative progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- مهارت های شخصی -->
+            <div class="conatainer-skils mt-4 w-100 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="item-a mt-4 text-center mb-5" data-aos="flip-left">مهارت های شخصی </h2>
+                <div class="conatainer-skils-c d-block d-md-flex flex-md-wrap w-100  justify-content-around align-items-center ">
+                    <!-- <div class="first-skil box-s ">
+                        <div class="counter-skil">
+
+                            <span class="counter text-danger">79%</span>
+
+                        </div>
+                        <div class="text-skil m-3">
+                            <p class="text-skil-p">کار گروهی</p>
+                        </div>
+                    </div>
+                    <div class="first-skil box-s">
+                        <div class="counter-skil">
+                            <span class="counter text-danger">80%</span>
+                        </div>
+                        <div class="text-skil ">
+                            <p class="text-skil-p">مدیریت پروژه</p>
+                        </div>
+                    </div>
+                    <div class="first-skil box-s ">
+                        <div class="counter-skil">
+
+                            <span class="counter text-danger">85%
+                            </span>
+                        </div>
+                        <div class="text-skil m-3">
+                            <p class="text-skil-p">خلاقیت</p>
+                        </div>
+                    </div>
+                    <div class="first-skil box-s ">
+                        <div class="counter-skil">
+
+                            <span class="counter text-danger">100%
+                            </span>
+                        </div>
+                        <div class="text-skil m-3">
+                            <p class="text-skil-p">پشتکار</p>
+                        </div>
+                    </div> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 text-center">
+                                <div class="progress-ring blue first-ring">
+                                    <span class="progress-left">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <div class="progress-value">70%</div>
+                                </div>
+                                <div class="m-3">
+                                    <span>مدیریت پروژه </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-5 text-center">
+                                <div class="progress-ring blue second-ring">
+                                    <span class="progress-left">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <div class="progress-value">90%</div>
+                                </div>
+                                <div class="m-3">
+                                    <span>مسِئولیت پذیری </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-center">
+                                <div class="progress-ring blue third-ring">
+                                    <span class="progress-left">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <div class="progress-value">80%</div>
+                                </div>
+                                <div class="m-3">
+                                    <span>کار گروهی </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-center">
+                                <div class="progress-ring blue fourth-ring">
+                                    <span class="progress-left">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar-ring"></span>
+                                    </span>
+                                    <div class="progress-value">100%</div>
+                                </div>
+                                <div class="m-3">
+                                    <span>پشتکار </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ==================رزومه من ================== -->
+        <!-- <div class="resome d-none   d-md-flex justify-content-center align-content-center rounded position-absolute beesa">
+            <img src="assets/images/rezome/Capture.PNG" alt="" class="w-100 h-100">
+
+        </div> -->
+        <!-- =============================پروژه ها ================ -->
+        <section id="projects" class="mt-3 d-flex flex-column justify-content-center align-content-center">
+            <div class="container-projects">
+                <h2 class="item-a text-center mb-3" data-aos="flip-left">نمونه کارها</h2>
+                <div class="btns-projects m-auto  d-flex justify-content-center align-items-center mt-3 flex-wrap">
+                    <div class="all-btn m-3 ">
+                        <button class="project-btn-show btn-effect-s active-dashed-btn" data-filter="all">
+                            همه
+
+                        </button>
+                    </div>
+                    <div class="html-btn m-3 ">
+                        <button class="project-btn-show btn-effect-s" data-filter="htmlCss">
+                            HTML CSS
+
+                        </button>
+                    </div>
+                    <div class="javascript-btn m-3 ">
+                        <button class="project-btn-show btn-effect-s" data-filter="javascript">
+                            JAVASCRIPT
+
+                        </button>
+                    </div>
+                    <div class="react-btn m-3 ">
+                        <button class="project-btn-show btn-effect-s" data-filter="reactjs">
+                            REACT JS
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-container w-100">
+                <div class="project-items d-md-flex justify-content-md-center justify-content-lg-center  align-items-center flex-wrap ">
+                    <div class="project-item m-3 cusor position-relative box-s store-item reactjs">
+                        <div class="picture-project-c h-100 w-100">
+                            <img src="assets/images/project-pictuer/image.png" alt="">
+                        </div>
+                        <div class="intro-projects text-center text-white">
+                            <P>REACT JS</P>
+                            <P class="m-2"> مشاهده نمونه کارها </P>
+                            <span class="link-projects"><i class="bx bx-link"></i></span>
+
+                        </div>
+
+                    </div>
+                    <div class="project-item m-3 cusor position-relative box-s store-item javascript">
+                        <a href="assets/javascript page/index.html" target="_blank">
+
+                            <div class="picture-project-c h-100">
+                                <img src="assets/images/project-pictuer/image (1).png" alt="">
+                            </div>
+                            <div class="intro-projects text-center text-white">
+                                <P> JAVASCRIPT</P>
+                                <P class="m-2">مشاهده نمونه کارها</P>
+                                <a href="assets/javascript page/index.html" target="_blank">
+                                    <span class="link-projects"><i class="bx bx-link"></i></span>
+                                </a>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item m-3 cusor position-relative box-s store-item htmlCss">
+                        <a href="assets/html css page/index.html" target="_blank">
+                            <div class="picture-project-c h-100">
+                                <img src="assets/images/project-pictuer/html-css.png" alt="">
+                            </div>
+                            <div class="intro-projects text-center text-white">
+
+                                <P> HTML CSS</P>
+                                <P class="m-2"> مشاهده نمونه کارها</P>
+                                <a href="assets/html css page/index.html" target="_blank"> <span class="link-projects"><i class="bx bx-link"></i></span></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="Article" class="articles mt-4">
+            <div class="inofo-article p-3">
+                <h2 class="item-a text-center mb-3" data-aos="flip-left"> مقاله ها</h2>
+            </div>
+            <div class="container-fluid  container-article d-block text-center d-md-flex justify-content-md-between align-items-md-center flex-md-wrap">
+
+
+                <div class="article cusor box-s " data-aos="fade-left">
+                    <div class="img-article">
+                        <img src="assets/images/articles/job-interview-concept-businessman-cv-resume-work-evaluation_53562-8348.png" alt="">
+                    </div>
+                    <div class="info-article">
+                        <h4 class="m-3 item-a">سوالات استخدامی از جاوا اسکریپت</h4>
+                        <p class="mt-3 p-2">
+                            وقتی برای یک شرکت درخواست همکاری ارسال می کنیم حتما یک سری سوالات در مورد اون زبان برنامه نویسی ....
+                        </p>
+                        <div class="btns mt-5">
+                            <button class="m-2 article-btn">مشاهده</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="article cusor box-s" data-aos="zoom-in">
+                    <div class="img-article">
+                        <img src="assets/images/articles/colleagues-communicating-break_74855-6302.png" alt="">
+                    </div>
+                    <div class="info-article">
+                        <h4 class="m-3 item-a">مهارت های یک برنامه نویس وب چیه؟</h4>
+                        <p class="mt-3 p-2">
+                            بالاخره تکلیف مارو روشن کنید دقیقا برای بازار کار چه مهارت های احتیاج هست منبع یادگیری مفید مناسب برای من از ...
+                        </p>
+                        <div class="btns">
+                            <button class="m-2 article-btn">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="article cusor box-s" data-aos="fade-left">
+                    <div class="img-article">
+                        <img src="assets/images/articles/conference-speaker-concept-illustration_114360-1828.png" alt="">
+                    </div>
+                    <div class="info-article">
+                        <h4 class="m-3 item-a">جواب این سوالات دقیقا چیه؟</h4>
+                        <p class="mt-3 p-2">
+
+                            از چند سالگی شروع کنیم ؟ اصلا از کجا شروع کنم ؟ریاضی وانگلیسی الگوریتم و فلوچارت؟لپ تاب مناسب؟ چقدر وقت بزارم ؟از بازار کار چه خبر؟ چجوری میتونم پیشرفت کنم؟
+                        </p>
+                        <div class="btns">
+                            <button class="m-2 article-btn">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid  container-article d-block text-center d-md-flex justify-content-md-between align-items-md-center flex-md-wrap">
+
+
+                <div class="article cusor box-s" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="img-article">
+                        <img src="assets/images/project-pictuer/html-css.png" alt="">
+                    </div>
+                    <div class="info-article">
+                        <h3 class="m-3">چرا برنامه نویسی کنیم</h3>
+                        <p class="mt-3">
+                            Voluptates quasi fugit voluptate? Assumenda nemo, odio est officiis quaerat recusandae nostrum repudiandae optio.
+                        </p>
+                        <div class="btns">
+                            <button class="m-2">مشاهده</button>
+                            <button class="m-2">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="article cusor box-s" data-aos="zoom-in">
+                    <div class="img-article">
+                        <img src="assets/images/project-pictuer/html-css.png" alt="">
+                    </div>
+                    <div class="info-article">
+                        <h3 class="m-3">چرا برنامه نویسی کنیم</h3>
+                        <p class="mt-3">
+                            Voluptates quasi fugit voluptate? Assumenda nemo, odio est officiis quaerat recusandae nostrum repudiandae optio.
+                        </p>
+                        <div class="btns">
+                            <button class="m-2">مشاهده</button>
+                            <button class="m-2">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="article cusor box-s" data-aos="fade-down">
+                    <div class="img-article ">
+                        <img src="assets/images/project-pictuer/html-css.png" alt="">
+                    </div>
+                    <div class="info-article">
+                        <h3 class="m-3">چرا برنامه نویسی کنیم</h3>
+                        <p class="mt-3">
+                            Voluptates quasi fugit voluptate? Assumenda nemo, odio est officiis quaerat recusandae nostrum repudiandae optio.
+                        </p>
+                        <div class="btns">
+                            <button class="m-2">مشاهده</button>
+                            <button class="m-2">مشاهده</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <section id="contactme">
+                <div class="container container-contact pt-3 mt-3 mb-3">
+                    <div class="contact-info" data-aos="flip-left">
+                        <h2 class="item-a text-center m-3">ارتباط با من</h2>
+
+                    </div>
+                </div>
+                <div class="container container-form">
+                    <form action="" class="form-main w-100">
+                        <div class="info-person">
+                            <input type="text" name="name" id="name" placeholder="نام خود را وارد کنید ...">
+                            <input type="text" name="familly" id="subject" placeholder="موضوع پیام ...">
+
+                        </div>
+                        <div class="email-info">
+                            <input type="email" name="email" id="emaill" placeholder="ایمیل خود را وارد کنید..." required>
+                        </div>
+                        <div class="text-messages">
+                            <textarea name="text" id="text-messages" cols="80" rows="10" placeholder="پیام شما...."></textarea>
+                        </div>
+                        <div class="btn-formm text-center">
+                            <div class="harchi">
+                                <button type="submit" class="btn-send">ارسال پیام</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </footer>
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+
+</html>
